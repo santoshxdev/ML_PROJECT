@@ -1,0 +1,35 @@
+==================================================
+           DATASET INSPECTION SUMMARY             
+==================================================
+Dataset File: data\Online Retail.xlsx
+Sheet Names: ['Online Retail']
+Primary Sheet Analyzed: 'Online Retail'
+Total Rows: 541909
+Total Columns: 8
+
+--- Column Names & Data Types ---
+  - InvoiceNo: object | Missing Values: 0
+  - StockCode: object | Missing Values: 0
+  - Description: object | Missing Values: 1454
+  - Quantity: int64 | Missing Values: 0
+  - InvoiceDate: datetime64[us] | Missing Values: 0
+  - UnitPrice: float64 | Missing Values: 0
+  - CustomerID: float64 | Missing Values: 135080
+  - Country: str | Missing Values: 0
+
+--- Key Statistics ---
+Duplicate Rows Count: 5268
+Missing CustomerID Rows: 135080 (24.93%)
+Unique CustomerID Count (excluding NaN): 4372
+Unique CustomerID Count (including NaN): 4373
+Total Unique Invoices (InvoiceNo): 25900
+Cancelled Transaction Rows (InvoiceNo starting with 'C'): 9288
+Unique Cancelled Invoice Numbers: 3836
+Total Unique Products (StockCode): 4070
+Total Unique Countries: 38
+Minimum InvoiceDate: 2010-12-01 08:26:00
+Maximum InvoiceDate: 2011-12-09 12:50:00
+
+--- Countries Represented ---
+United Kingdom, France, Australia, Netherlands, Germany, Norway, EIRE, Switzerland, Spain, Poland, Portugal, Italy, Belgium, Lithuania, Japan, Iceland, Channel Islands, Denmark, Cyprus, Sweden, Austria, Israel, Finland, Bahrain, Greece, Hong Kong, Singapore, Lebanon, United Arab Emirates, Saudi Arabia, Czech Republic, Canada, Unspecified, Brazil, USA, European Community, Malta, RSA
+==================================================

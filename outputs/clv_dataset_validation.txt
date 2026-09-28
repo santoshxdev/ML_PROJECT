@@ -1,0 +1,26 @@
+==================================================
+       CLV DATASET VALIDATION REPORT             
+==================================================
+Temporal split cutoff      : 2011-09-25
+Historical period          : 2010-12-01 to 2011-09-25
+Future period              : 2011-09-25 to 2011-12-09
+
+Final customer count       : 3,550
+Feature count              : 8
+Features used              : ['Recency', 'Frequency', 'MonetaryValue', 'AverageOrderValue', 'TotalQuantity', 'CustomerTenure', 'PurchaseFrequency', 'UniqueProducts']
+
+--- Target Statistics (Future_CLV) ---
+  Minimum CLV              : 0.00
+  Maximum CLV              : 168469.60
+  Mean CLV                 : 689.62
+  Median CLV               : 118.76
+  Customers with CLV = 0   : 1,657
+
+--- Data Integrity Checks ---
+  Duplicate CustomerID rows: 0
+  Missing target values    : 0
+  Infinite values          : 0
+  Negative feature values  : 0
+  Future info in features  : NO — features built from historical period only
+  Target leakage check     : PASS — Future_CLV from future period only
+==================================================
